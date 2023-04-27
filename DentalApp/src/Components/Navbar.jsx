@@ -1,9 +1,12 @@
-import React from 'react'
 
 export default function Navbar() {
   return (
-    <div>
-      
-    </div>
+    <nav>
+      <ul>
+        <li>Pacientes</li>
+        <li>Odontologos</li>
+        <li>Turnos</li>
+      </ul>
+    </nav>
   )
 }
