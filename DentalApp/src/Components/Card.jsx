@@ -1,11 +1,12 @@
-export default function Card() {
+/* eslint-disable react/prop-types */
+
+export default function Card({img , title , description}) {
   return (
     <div className="card-container">
-      <img src=".." />
+      <img src={img} width="200px" />
+      <h2>{title}</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere nam
-        perferendis sit qui excepturi saepe! Ea voluptas tenetur quos, commodi
-        rem non quas iste, a ut necessitatibus deserunt ducimus?
+        {description}
       </p>
       <button>Ir</button>
     </div>

@@ -1,4 +1,4 @@
-import Card from './Components/Card'
+import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import './App.css'
 
@@ -7,9 +7,7 @@ function App() {
   return (
     <>
     <Navbar />
-      <Card />
-      <Card />
-      <Card />
+    <Home />
     </>
   )
 }
