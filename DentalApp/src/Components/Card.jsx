@@ -3,12 +3,12 @@
 export default function Card({img , title , description}) {
   return (
     <div className="card-container">
-      <img src={img} width="200px" />
+      <img className="card-image" src={img} />
       <h2>{title}</h2>
       <p>
         {description}
       </p>
-      <button>Ir</button>
+      <button>Gestionar</button>
     </div>
   );
 }
