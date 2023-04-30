@@ -1,14 +1,23 @@
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav>
-      <img src="../images/DH.png" width= "200px" height="50px"/>
+      <Link to="/home">
+      <img src="../images/DH.png" width="200px" height="50px" />
+      </Link>
       <ul>
-        <li>Pacientes</li>
-        <li>Odontologos</li>
-        <li>Turnos</li>
+        <li>
+          <Link to="/patient">Pacientes</Link>
+        </li>
+        <li>
+          <Link to="/dentist">Odontologos</Link>
+        </li>
+        <li>
+          <Link to="/shieft">Turnos</Link>
+        </li>
         <li>Cerrar sesion</li>
       </ul>
     </nav>
-  )
+  );
 }
