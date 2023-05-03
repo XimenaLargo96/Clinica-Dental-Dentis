@@ -24,11 +24,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -70,6 +67,28 @@ li{
   padding-right: 30px;
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input{
+  height: 25px;
+  width: 200px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.div-input{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
 .card-grid{
   display: flex;
   justify-content: space-evenly;
