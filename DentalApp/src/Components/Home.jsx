@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>Bienvenido a la clinica dental Dentist</h1>
+      <h1 className="m-5">Bienvenido a la clinica dental Dentist</h1>
       <Row xs={1} md={3} className="g-4">
         {cardValues.map((item , index) => (
           <Col key={index}>
