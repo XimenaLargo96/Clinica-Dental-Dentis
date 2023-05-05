@@ -1,14 +1,17 @@
 /* eslint-disable react/prop-types */
+import { Card as Cards , Button} from "react-bootstrap";
 
 export default function Card({img , title , description}) {
   return (
-    <div className="card-container">
-      <img className="card-image" src={img} />
-      <h2>{title}</h2>
-      <p>
+      <Cards style={{ width: '18rem' }}>
+      <Cards.Img variant="top" src={img} />
+      <Cards.Body>
+        <Cards.Title>{title}</Cards.Title>
+        <Cards.Text>
         {description}
-      </p>
-      <button>Gestionar</button>
-    </div>
+        </Cards.Text>
+        <Button variant="primary">Go </Button>
+      </Cards.Body>
+    </Cards>
   );
 }

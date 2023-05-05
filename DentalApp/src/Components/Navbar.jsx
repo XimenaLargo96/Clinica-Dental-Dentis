@@ -1,23 +1,18 @@
-import { Link } from "react-router-dom";
+import { Navbar as Navbar1 , Container , Nav } from "react-bootstrap";
 
 export default function Navbar() {
   return (
-    <nav>
-      <Link to="/home">
-      <img src="../images/DH.png" width="200px" height="50px" />
-      </Link>
-      <ul>
-        <li>
-          <Link to="/patient">Pacientes</Link>
-        </li>
-        <li>
-          <Link to="/dentist">Odontologos</Link>
-        </li>
-        <li>
-          <Link to="/shieft">Turnos</Link>
-        </li>
-        <li>Cerrar sesion</li>
-      </ul>
-    </nav>
+    <>
+    <Navbar1 bg="primary" variant="dark">
+        <Container>
+          <Navbar1.Brand href="/home">Home</Navbar1.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="/patient">Pacientes</Nav.Link>
+            <Nav.Link href="/dentist">Odontologos</Nav.Link>
+            <Nav.Link href="/shieft">Turnos</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar1>
+    </>
   );
 }
