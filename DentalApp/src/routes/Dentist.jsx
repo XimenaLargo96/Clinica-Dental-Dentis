@@ -1,13 +1,26 @@
 import { Button, Row, Col, Container, Form, Card } from "react-bootstrap";
+import { useState } from "react";
 
 export default function Dentist() {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
+
   return (
     <>
       <h1 className="m-3">Odontologos Clinica Dental</h1>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto" }}>
-            <Form>
+            <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group
                   className="mb-3"
@@ -16,7 +29,10 @@ export default function Dentist() {
                   controlId="formBasicEmail"
                 >
                   <Form.Label>Nombre </Form.Label>
-                  <Form.Control type="text" placeholder="Enter name" />
+                  <Form.Control type="text" placeholder="Enter name" required />
+                  <Form.Control.Feedback type="invalid">
+                    Please provide a name.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group
@@ -26,7 +42,14 @@ export default function Dentist() {
                   controlId="formBasicPassword"
                 >
                   <Form.Label>Apellido</Form.Label>
-                  <Form.Control type="text" placeholder="Enter Last name" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter Last name"
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    Please provide a last name.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group
@@ -36,7 +59,10 @@ export default function Dentist() {
                   controlId="formBasicPassword"
                 >
                   <Form.Label>Matricula</Form.Label>
-                  <Form.Control type="text" placeholder="Enter nit" />
+                  <Form.Control type="text" placeholder="Enter nit" required />
+                  <Form.Control.Feedback type="invalid">
+                    Please provide a number.
+                  </Form.Control.Feedback>
                 </Form.Group>
               </Row>
 
