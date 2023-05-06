@@ -3,7 +3,7 @@ import { Container , Row , Card , Form , Button } from "react-bootstrap"
 export default function Shieft() {
   return (
     <>
-    <h1>Turnos Clinica Dental</h1>
+    <h1 className="m-3">Turnos Clinica Dental</h1>
     <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto"}}>

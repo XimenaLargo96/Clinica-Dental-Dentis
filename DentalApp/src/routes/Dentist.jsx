@@ -3,7 +3,7 @@ import { Button, Row, Container, Form, Card } from "react-bootstrap";
 export default function Dentist() {
   return (
     <>
-    <h1>Odontologos Clinica Dental</h1>
+    <h1 className="m-3">Odontologos Clinica Dental</h1>
     <Container className="mt-5">
       <Row className="justify-content-md-center">
         <Card style={{ width: "18rem" }}>
