@@ -19,8 +19,8 @@ export default function Patient() {
       event.preventDefault();
       event.stopPropagation();
     }
-
     setValidated(true);
+    alert("Form enviado con exito")
   };
 
   return (
@@ -40,8 +40,8 @@ export default function Patient() {
                   <Form.Label>Nombre </Form.Label>
                   <Form.Control type="text" placeholder="Enter name" required />
                   <Form.Control.Feedback type="invalid">
-            Please provide a valid name.
-          </Form.Control.Feedback>
+                    Please provide a valid name.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group
@@ -70,8 +70,8 @@ export default function Patient() {
                   <Form.Label>Dni</Form.Label>
                   <Form.Control type="text" placeholder="Enter Dni" required />
                   <Form.Control.Feedback type="invalid">
-            Please provide a valid dni.
-          </Form.Control.Feedback>
+                    Please provide a valid dni.
+                  </Form.Control.Feedback>
                 </Form.Group>
 
                 <Form.Group
@@ -86,17 +86,33 @@ export default function Patient() {
                     style={{ cursor: "pointer" }}
                     required
                   />
-                   <Form.Control.Feedback type="invalid">
-            Please provide a date.
-          </Form.Control.Feedback>
+                  <Form.Control.Feedback type="invalid">
+                    Please provide a date.
+                  </Form.Control.Feedback>
                 </Form.Group>
               </Row>
               <InputGroup className="mb-3">
                 <InputGroup.Text>Domicilio</InputGroup.Text>
-                <Form.Control aria-label="First name" placeholder="Calle" required />
-                <Form.Control aria-label="Last name" placeholder="numero" required />
-                <Form.Control aria-label="Last name" placeholder="Localidad" required />
-                <Form.Control aria-label="Last name" placeholder="Provincia" required />
+                <Form.Control
+                  aria-label="First name"
+                  placeholder="Calle"
+                  required
+                />
+                <Form.Control
+                  aria-label="Last name"
+                  placeholder="numero"
+                  required
+                />
+                <Form.Control
+                  aria-label="Last name"
+                  placeholder="Localidad"
+                  required
+                />
+                <Form.Control
+                  aria-label="Last name"
+                  placeholder="Provincia"
+                  required
+                />
               </InputGroup>
               <Button variant="primary" type="submit">
                 Registrar
