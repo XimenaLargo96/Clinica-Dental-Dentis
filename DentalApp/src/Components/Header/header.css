@@ -1,0 +1,15 @@
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/images/pexels-karolina-grabowska-4386466.jpg');
+    background-size: cover;
+    height: 60vh;
+}
+
+.header-title{
+    font-weight: 500;
+    font-size: 4rem;
+    color: aliceblue;
+}

@@ -1,15 +1,13 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,700&display=swap');
+
+*{
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.header-logo {
+  height: 5rem;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

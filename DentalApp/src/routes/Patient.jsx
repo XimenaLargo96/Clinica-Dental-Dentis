@@ -25,7 +25,7 @@ export default function Patient() {
 
   return (
     <>
-      <h1 className="m-3">Pacientes Clinica Dental</h1>
+      <h2 className="m-3">Pacientes Clinica Dental</h2>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto" }}>

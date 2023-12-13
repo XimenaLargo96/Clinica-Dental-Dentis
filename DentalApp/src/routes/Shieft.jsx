@@ -17,7 +17,7 @@ export default function Shieft() {
 
   return (
     <>
-      <h1 className="m-3">Turnos Clinica Dental</h1>
+      <h2 className="m-3">Turnos Clinica Dental</h2>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto" }}>

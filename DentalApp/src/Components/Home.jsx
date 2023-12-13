@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
+import Header from "./Header/Header.jsx";
 
 export default function Home() {
   const cardValues = [
@@ -22,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="m-3">Bienvenido a la clinica dental Dentist</h1>
+    <Header/>
       <Container className="mt-5">
       <Row xs={1} md={3} className="g-4">
         {cardValues.map((item , index) => (
