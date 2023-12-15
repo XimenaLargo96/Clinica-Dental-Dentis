@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
-import CarouselImg from "./Carousel/CarouselImg.jsx";
+import CarouselImg from "./CarouselImg.jsx";
 
 export default function Home() {
   const cardValues = [

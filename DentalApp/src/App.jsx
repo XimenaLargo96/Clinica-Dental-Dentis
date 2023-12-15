@@ -1,12 +1,12 @@
 /* eslint-disable */
 
-import Navbar from './Components/Navbar'
+import Navbar from './Components/Navbar.jsx'
 import './App.css'
 import { Outlet } from 'react-router-dom'
 import { useLocation , useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import SocialMedia from './Components/SocialMedia.jsx';
-import Header from './Components/Header/Header.jsx';
+import Footer from './Components/Footer.jsx';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
     <SocialMedia />
     <Navbar />
     <Outlet />
+    <Footer />
     </>
   )
 }

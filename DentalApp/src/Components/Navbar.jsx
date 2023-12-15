@@ -7,7 +7,7 @@ export default function Navbar() {
           <Navbar1.Brand href="/home">
             <img className="header-logo" src="../../public/images/logo-dentis.png" alt="banner" />
           </Navbar1.Brand>
-          <Nav className="me-0 flex-wrap">
+          <Nav className="me-0 justify-content-between flex-wrap">
             <Nav.Link className="fs-5" href="/patient">Pacientes</Nav.Link>
             <Nav.Link className="fs-5" href="/dentist">Odontologos</Nav.Link>
             <Nav.Link className="fs-5" href="/shieft">Turnos</Nav.Link>
