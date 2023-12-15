@@ -1,6 +1,6 @@
 import {Nav , Navbar} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram , faFacebook , faTwitter} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram , faFacebook , faTwitter , faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 
 export default function Footer() {
@@ -19,6 +19,9 @@ export default function Footer() {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3"><FontAwesomeIcon icon={faTwitter} /></Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-4"><FontAwesomeIcon icon={faYoutube} /></Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>

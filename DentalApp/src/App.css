@@ -8,28 +8,20 @@
 .header-logo {
   height: 5rem;
 }
-.logo:hover {
+.header-logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
+}
+.carousel-inner{
+height: 70vh;
+}
+.carousel-inner img {
+  width: 100vw;
+  height: 70vh;
+}
+
+.carousel-inner .item caption{
+  max-height: auto;
 }
