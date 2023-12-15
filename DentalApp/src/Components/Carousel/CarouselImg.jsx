@@ -4,12 +4,10 @@ import { Carousel} from "react-bootstrap";
 export default function CarouselImg() {
   return (
     <>
-    <div className="d-flex justify-content-center">
-
-      <Carousel data-bs-theme="dark" className="w-75 h-50">
+      <Carousel data-bs-theme="dark" className="w-100">
         <Carousel.Item>
           <img
-            className="d-block w-100 h-75"
+            className="d-block w-100"
             src="/images/dentista.jpg"
             alt="First slide"
           />
@@ -20,7 +18,7 @@ export default function CarouselImg() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 h-75"
+            className="d-block w-100"
             src="/images/paciente.jpg"
             alt="Second slide"
           />
@@ -31,7 +29,7 @@ export default function CarouselImg() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 h-75"
+            className="d-block w-100"
             src="/images/cita.webp"
             alt="Third slide"
           />
@@ -43,7 +41,6 @@ export default function CarouselImg() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </div>
     </>
   );
 }

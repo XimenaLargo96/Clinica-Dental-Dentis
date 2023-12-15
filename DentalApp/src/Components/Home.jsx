@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Card from "./Card";
 import CarouselImg from "./Carousel/CarouselImg.jsx";
-import Header from "./Header/Header.jsx";
 
 export default function Home() {
   const cardValues = [
@@ -24,24 +23,23 @@ export default function Home() {
 
   return (
     <>
-    <Header />
-    <main className="container-fluid">
-    <CarouselImg />
-      <Container className="mt-5">
-      <Row xs={1} md={3} className="g-4">
-        {cardValues.map((item , index) => (
-          <Col key={index}>
-          <Card
-            key={item.title}
-            title={item.title}
-            img={item.image}
-            description={item.description}
-          />
-          </Col>
-        ))}
-      </Row>
-      </Container>
-    </main>
+      <main>
+        <CarouselImg />
+        <Container className="mt-5">
+          <Row xs={1} md={3} className="g-4">
+            {cardValues.map((item, index) => (
+              <Col key={index}>
+                <Card
+                  key={item.title}
+                  title={item.title}
+                  img={item.image}
+                  description={item.description}
+                />
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </main>
     </>
   );
 }

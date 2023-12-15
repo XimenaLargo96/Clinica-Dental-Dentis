@@ -5,7 +5,7 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 import { useLocation , useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import Footer from './Components/Footer';
+import SocialMedia from './Components/SocialMedia.jsx';
 import Header from './Components/Header/Header.jsx';
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
 
   return (
     <>
+    <SocialMedia />
     <Navbar />
     <Outlet />
-    <Footer />
     </>
   )
 }
