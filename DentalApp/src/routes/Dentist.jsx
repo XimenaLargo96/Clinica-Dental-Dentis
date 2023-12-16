@@ -1,5 +1,6 @@
 import { Button, Row, Col, Container, Form, Card } from "react-bootstrap";
 import { useState } from "react";
+import ButtonComponent from "../Components/ButtonComponent";
 
 export default function Dentist() {
   const [validated, setValidated] = useState(false);
@@ -16,10 +17,10 @@ export default function Dentist() {
 
   return (
     <>
-      <h2 className="m-3">Odontologos Clinica Dental</h2>
+      <h2 className="m-3 text-center">Odontologos Clinica Dental</h2>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
-          <Card style={{ width: "auto" }}>
+          <Card style={{ width: "auto" }} className="p-3">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group
@@ -65,10 +66,7 @@ export default function Dentist() {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
-
-              <Button variant="primary" type="submit">
-                Registrar
-              </Button>
+         <ButtonComponent name={"Registar Odontologo"} />
             </Form>
           </Card>
         </Row>

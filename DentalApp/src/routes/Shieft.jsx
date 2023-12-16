@@ -1,5 +1,6 @@
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 import { useState } from "react";
+import ButtonComponent from "../Components/ButtonComponent";
 
 export default function Shieft() {
 
@@ -17,10 +18,10 @@ export default function Shieft() {
 
   return (
     <>
-      <h2 className="m-3">Turnos Clinica Dental</h2>
+      <h2 className="m-3 text-center">Turnos Clinica Dental</h2>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
-          <Card style={{ width: "auto" }}>
+          <Card style={{ width: "auto" }} className="p-3">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group
@@ -62,9 +63,7 @@ export default function Shieft() {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
-              <Button variant="primary" type="submit">
-                Registrar
-              </Button>
+           <ButtonComponent name={"Generar turno"}/>
             </Form>
           </Card>
         </Row>

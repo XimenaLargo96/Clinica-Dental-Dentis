@@ -4,11 +4,11 @@ import {
   Row,
   Col,
   Card,
-  Button,
   InputGroup,
 } from "react-bootstrap";
 
 import { useState } from "react";
+import ButtonComponent from "../Components/ButtonComponent";
 
 export default function Patient() {
   const [validated, setValidated] = useState(false);
@@ -25,10 +25,10 @@ export default function Patient() {
 
   return (
     <>
-      <h2 className="m-3">Pacientes Clinica Dental</h2>
+      <h2 className="m-3 text-center">Pacientes Clinica Dental</h2>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
-          <Card style={{ width: "auto" }}>
+          <Card style={{ width: "auto" }} className="p-3">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Row className="mb-3">
                 <Form.Group
@@ -114,9 +114,7 @@ export default function Patient() {
                   required
                 />
               </InputGroup>
-              <Button variant="primary" type="submit">
-                Registrar
-              </Button>
+              <ButtonComponent name={"Registrar Paciente"}/>
             </Form>
           </Card>
         </Row>
