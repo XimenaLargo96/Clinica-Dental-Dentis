@@ -5,7 +5,7 @@ export default function ButtonComponent({name}) {
   return (
     <>
     <div className='d-flex justify-content-center'>
-    <Button variant="primary" type="submit">
+    <Button style={{backgroundColor:'#0dcaf085',}} variant="info" type="submit">
                 {name}
               </Button>
     </div>

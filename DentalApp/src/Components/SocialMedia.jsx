@@ -6,7 +6,7 @@ import { faInstagram , faFacebook , faTwitter , faYoutube} from '@fortawesome/fr
 export default function Footer() {
   return (
     <>
-    <Navbar bg="primary bg-opacity-50" className="justify-content-end pe-5">
+    <Navbar bg="info bg-opacity-50" className="justify-content-end pe-5">
       <Nav activeKey="/home">
         <Nav.Item>
           <Nav.Link href="/home"></Nav.Link>
