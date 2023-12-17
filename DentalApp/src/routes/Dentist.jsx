@@ -17,8 +17,9 @@ export default function Dentist() {
 
   return (
     <>
-      <h2 className="m-3 text-center">Odontologos Clinica Dental</h2>
-      <Container className="mt-5">
+      <h2 className="mt-3 text-center">Odontologos</h2>
+      <p className="p-4 text-center">Registra nuevos odontologos en tu clínica dental</p>
+      <Container>
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto" }} className="p-3">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>

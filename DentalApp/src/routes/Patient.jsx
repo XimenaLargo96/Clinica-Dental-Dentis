@@ -26,7 +26,8 @@ export default function Patient() {
   return (
     <>
       <h2 className="m-3 text-center">Pacientes Clinica Dental</h2>
-      <Container className="mt-5">
+      <p className="p-4 text-center">Registra nuevos pacientes en tu clínica dental</p>
+      <Container>
         <Row className="justify-content-md-center">
           <Card style={{ width: "auto" }} className="p-3">
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
