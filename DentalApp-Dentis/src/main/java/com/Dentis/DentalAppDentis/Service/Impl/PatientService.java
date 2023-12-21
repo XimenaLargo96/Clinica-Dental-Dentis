@@ -1,5 +1,6 @@
 package com.Dentis.DentalAppDentis.Service.Impl;
 
+
 import com.Dentis.DentalAppDentis.Model.Patient;
 import com.Dentis.DentalAppDentis.Repository.IPatientRepository;
 import com.Dentis.DentalAppDentis.Service.IPatientService;
@@ -33,4 +34,5 @@ private final IPatientRepository patientRepository;
     public void deletePatient(Long id) {
 
     }
+
 }
