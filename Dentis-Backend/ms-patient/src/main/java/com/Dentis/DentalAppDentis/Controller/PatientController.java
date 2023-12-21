@@ -1,5 +1,6 @@
 package com.Dentis.DentalAppDentis.Controller;
 
+
 import com.Dentis.DentalAppDentis.Model.Patient;
 import com.Dentis.DentalAppDentis.Service.Impl.PatientService;
 import lombok.RequiredArgsConstructor;
@@ -18,5 +19,4 @@ public class PatientController {
     public ResponseEntity<Optional<Patient>> getPatient(@PathVariable Long id){
         return ResponseEntity.ok(patientService.getPatientById(id));
     }
-
 }

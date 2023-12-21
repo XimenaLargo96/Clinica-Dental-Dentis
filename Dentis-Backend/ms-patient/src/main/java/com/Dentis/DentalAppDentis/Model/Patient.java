@@ -2,7 +2,6 @@ package com.Dentis.DentalAppDentis.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
