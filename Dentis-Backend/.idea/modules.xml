@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/ms-patient/DentalApp-Dentis.iml" filepath="$PROJECT_DIR$/ms-patient/DentalApp-Dentis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Dentis-Backend.iml" filepath="$PROJECT_DIR$/.idea/Dentis-Backend.iml" />
-    </modules>
-  </component>
-</project>
