@@ -21,3 +21,9 @@ height: 70vh;
 .carousel-inner .item caption{
   max-height: auto;
 }
+
+@media screen and (max-width: 768px){
+  .carousel-inner img, .carousel-inner {
+    height: 40vh;
+  }
+}
