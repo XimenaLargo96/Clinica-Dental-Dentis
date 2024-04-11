@@ -7,6 +7,7 @@ import java.util.Optional;
 
 public interface IDentistService {
 
+    Dentist createDentist(Dentist dentist);
     Optional<Dentist> getDentistById(Long id);
 
     List<Dentist> getAllDentist();
