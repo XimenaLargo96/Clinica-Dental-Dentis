@@ -6,6 +6,7 @@ import java.util.Optional;
 
 public interface IPatientService {
 
+ Patient CreatePatient(Patient patient);
  Optional<Patient> getPatientById (Long id);
 
  List<Patient> getAllPatients();

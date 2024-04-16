@@ -15,6 +15,11 @@ import java.util.Optional;
 public class PatientService implements IPatientService {
 
 private final IPatientRepository patientRepository;
+
+    @Override
+    public Patient CreatePatient(Patient patient) {
+        return patientRepository.save(patient);
+    }
     @Override
     public Optional<Patient> getPatientById(Long id) {
         return patientRepository.findById(id);

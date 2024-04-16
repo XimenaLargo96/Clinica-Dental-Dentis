@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data @AllArgsConstructor @NoArgsConstructor
@@ -19,12 +20,5 @@ public class Patient {
     private String name;
     private String lastName;
     private Integer dni;
-    private Date entryDate;
-
-    public Patient(String name, String lastName, Integer dni, Date entryDate) {
-        this.name = name;
-        this.lastName = lastName;
-        this.dni = dni;
-        this.entryDate = entryDate;
-    }
+    private LocalDate entryDate;
 }
