@@ -14,4 +14,6 @@ public interface IPatientService {
  Patient updatePatient(Patient patient);
 
  void deletePatient(Long id);
+
+Optional<Patient> getPatientWithAppointments(Long patientId);
 }

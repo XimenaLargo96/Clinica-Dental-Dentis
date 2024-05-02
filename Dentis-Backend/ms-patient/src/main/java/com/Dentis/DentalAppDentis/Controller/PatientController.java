@@ -24,4 +24,5 @@ public class PatientController {
     public ResponseEntity<Optional<Patient>> getPatient(@PathVariable Long id){
         return ResponseEntity.ok(patientService.getPatientById(id));
     }
+
 }

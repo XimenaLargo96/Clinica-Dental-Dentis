@@ -1,12 +1,14 @@
 package com.Dentis.DentalAppDentis.Service.Impl;
 
-
+import com.Dentis.DentalAppDentis.Feign.AppointmentFeignClient;
+import com.Dentis.DentalAppDentis.Model.Appointment;
 import com.Dentis.DentalAppDentis.Model.Patient;
 import com.Dentis.DentalAppDentis.Repository.IPatientRepository;
 import com.Dentis.DentalAppDentis.Service.IPatientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,6 +17,8 @@ import java.util.Optional;
 public class PatientService implements IPatientService {
 
 private final IPatientRepository patientRepository;
+
+private final AppointmentFeignClient appointmentFeignClient;
 
     @Override
     public Patient CreatePatient(Patient patient) {
@@ -40,4 +44,11 @@ private final IPatientRepository patientRepository;
 
     }
 
+    @Override
+    public Optional<Patient> getPatientWithAppointments(Long patientId) {
+        Optional<Patient> patient = getPatientById(patientId);
+        List<Appointment> appointments = appointmentFeignClient.getAppointmentsByPatient(patientId);
+        patient.ifPresent(value -> value.setAppointmentsId(appointments));
+        return patient;
+    }
 }
